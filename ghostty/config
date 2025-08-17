@@ -1,0 +1,3 @@
+shell-integration = zsh
+font-family = NotoMono NFM
+theme = catppuccin-mocha
