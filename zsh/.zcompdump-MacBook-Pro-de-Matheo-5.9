@@ -2,7 +2,6 @@
 
 _comps=(
 '_arguments' '__arguments'
-'_git_log_prettily' '_git'
 '-' '_precommand'
 '-array-value-' '_value'
 '-assign-parameter-' '_assign'
@@ -329,7 +328,6 @@ _comps=(
 'cygserver.exe' '_cygserver'
 'cygstart' '_cygstart'
 'cygstart.exe' '_cygstart'
-'d' '_dirs'
 'dak' '_dak'
 'darcs' '_darcs'
 'dash' '_sh'
@@ -536,7 +534,6 @@ _comps=(
 'gbasename' '_basename'
 'gcat' '_cat'
 'gcc' '_gcc'
-'gccd' '_git'
 'gccgo' '_go'
 'gchgrp' '_chown'
 'gchmod' '_chmod'
@@ -553,9 +550,7 @@ _comps=(
 'gdd' '_dd'
 'gdf' '_df'
 'gdiff' '_diff'
-'gdnolock' '_git'
 'gdu' '_du'
-'gdv' '_git'
 'geany' '_geany'
 'gegrep' '_grep'
 'gem' '_gem'
@@ -580,13 +575,7 @@ _comps=(
 'gfmt' '_fmt'
 'gfold' '_fold'
 'ggetopt' '_getopt'
-'ggf' '_git'
-'ggfl' '_git'
-'ggl' '_git'
-'ggp' '_git'
-'ggpnp' '_git'
 'ggrep' '_grep'
-'ggu' '_git'
 'ggv' '_gnome-gv'
 'ghead' '_head'
 'ghostscript' '_ghostscript'
@@ -1063,7 +1052,6 @@ _comps=(
 'ogginfo' '_vorbis'
 'oksh' '_sh'
 'okular' '_okular'
-'omz' '_omz'
 'open' '_open'
 'openstack' '_openstack'
 'opera' '_webbrowser'
@@ -1748,7 +1736,6 @@ _comps=(
 )
 
 _services=(
-'_git_log_prettily' 'git-log'
 '-redirect-,<,bunzip2' 'bunzip2'
 '-redirect-,<,bzip2' 'bzip2'
 '-redirect-,<,compress' 'compress'
@@ -1763,17 +1750,8 @@ _services=(
 '-redirect-,>,xz' 'unxz'
 'bzcat' 'bunzip2'
 'dch' 'debchange'
-'gccd' 'git-clone'
 'gchgrp' 'chgrp'
 'gchown' 'chown'
-'gdnolock' 'git-diff'
-'gdv' 'git-diff'
-'ggf' 'git-checkout'
-'ggfl' 'git-checkout'
-'ggl' 'git-checkout'
-'ggp' 'git-checkout'
-'ggpnp' 'git-checkout'
-'ggu' 'git-checkout'
 'gnupod_addsong.pl' 'gnupod_addsong'
 'gnupod_check.pl' 'gnupod_check'
 'gnupod_INIT.pl' 'gnupod_INIT'
@@ -2069,3 +2047,6 @@ autoload -Uz +X _call_program
 
 typeset -gUa _comp_assocs
 _comp_assocs=( '' )
+
+#omz revision: 736632228a5f39573a15f4533b7672851f30bbe6
+#omz fpath: /Users/matheo/.config/ohmyzsh/custom/plugins/zsh-autosuggestions /Users/matheo/.config/ohmyzsh/custom/plugins/fast-syntax-highlighting /Users/matheo/.config/ohmyzsh/plugins/git /Users/matheo/.config/ohmyzsh/functions /Users/matheo/.config/ohmyzsh/completions /Users/matheo/.config/ohmyzsh/custom/functions /Users/matheo/.config/ohmyzsh/custom/completions /Users/matheo/.config/ohmyzsh/cache/completions /opt/homebrew/share/zsh/site-functions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.9/functions

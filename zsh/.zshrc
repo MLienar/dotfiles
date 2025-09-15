@@ -2,7 +2,7 @@
 
 
 # Path to your oh-my-zsh installation.
-export ZSH=~"/.config/oh-my-zsh"
+export ZSH=~"/.config/ohmyzsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -68,7 +68,7 @@ zstyle ':omz:update' mode reminder # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting fast-syntax-highlighting)
+plugins=(git fast-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,6 +121,10 @@ export NVM_DIR="$HOME/.nvm"
 
 ;
 
+export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
+export XDG_CACHE_HOME=${XDG_CACHE_HOME:-$HOME/.cache}
+export XDG_DATA_HOME=${XDG_DATA_HOME:-$HOME/.local/share}
+export XDG_STATE_HOME=${XDG_STATE_HOME:-$HOME/.local/state}
 
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
@@ -128,7 +132,8 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="~/.local/scripts/ready-tmux:$PATH"
 . "$HOME/.local/bin/env"
+eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
