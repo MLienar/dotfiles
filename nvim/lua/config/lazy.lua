@@ -23,7 +23,15 @@ require("lazy").setup({
     {
       "neovim/nvim-lspconfig",
       opts = {
-        servers = { eslint = {}, biome = {} },
+        servers = {
+          eslint = {
+            codeActionOnSave = {
+              enable = true,
+              mode = "all",
+            },
+          },
+          biome = {},
+        },
         setup = {
           eslint = function()
             require("lazyvim.util").lsp.on_attach(function(client)

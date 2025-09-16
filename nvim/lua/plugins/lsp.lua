@@ -64,6 +64,12 @@ return {
         prettier = {
           require_cwd = true,
         },
+        eslint = {
+          require_cwd = true,
+        },
+        ["biome-organize-imports"] = {
+          require_cwd = true,
+        },
       },
       formatters_by_ft = {
         lua = { "stylua" },
