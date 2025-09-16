@@ -10,5 +10,7 @@
 [submodule "tmux/plugins/vim-tmux-navigator"]
 	path = tmux/plugins/vim-tmux-navigator
 	url = git@github.com:christoomey/vim-tmux-navigator.git
-
+[submodule "tmux/plugins/tmux-kanagawa"]
+	path = tmux/plugins/tmux-kanagawa
+	url = git@github.com:Nybkox/tmux-kanagawa.git
 
