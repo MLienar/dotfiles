@@ -80,4 +80,5 @@ return {
       },
     },
   },
+  { "chrisgrieser/nvim-rulebook" },
 }

@@ -9,6 +9,7 @@ return {
       })
     end,
   },
+  { "akinsho/git-conflict.nvim", version = "*", config = true },
   {
     "christoomey/vim-tmux-navigator",
     cmd = {

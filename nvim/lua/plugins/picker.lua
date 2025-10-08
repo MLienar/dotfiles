@@ -10,9 +10,13 @@ return {
         hidden = true,
         ignored = true,
         exclude = { -- add folder names here to exclude
+          "pnpm-lock.yaml",
           ".git",
           "node_modules",
           ".venv",
+          ".nx",
+          "nx_cache",
+          "dist",
         },
         sources = {
           files = {
@@ -22,6 +26,8 @@ return {
           explorer = {
             include = {
               "node_modules",
+              "dist",
+              "pnpm-lock.yaml",
             },
           },
         },

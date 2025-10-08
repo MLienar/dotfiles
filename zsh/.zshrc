@@ -135,5 +135,11 @@ esac
 # source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="~/.local/scripts/ready-tmux:$PATH"
 . "$HOME/.local/bin/env"
+export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/matheo/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
